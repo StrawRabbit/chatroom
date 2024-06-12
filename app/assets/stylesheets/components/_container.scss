@@ -1,5 +1,7 @@
 .container {
-  background-color: rgb(178, 148, 89);
+  background-color: rgba(178, 148, 89, 0.712);
+  border: solid 2px;
+  border-color: rgb(178, 148, 89);
   margin-left: auto;
   margin-right: auto;
   width: 95%;
@@ -8,8 +10,13 @@
   padding: 10px;
   border-radius: 10px;
   justify-content: space-between;
+  color: aliceblue;
 }
 
 .leftside {
   width: 100%;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
