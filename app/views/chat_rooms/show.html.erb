@@ -3,6 +3,11 @@
   <div class="leftside">
   <div class="chatbox">
   chatbox
+    <% @chat_room.messages.each do |message| %>
+      <% if message.chat_room_id ==  @chat_room.id %>
+       <p> <%= message.content %></p>
+      <% end %>
+    <% end %>
   </div>
 
   <div class="messagebox">
