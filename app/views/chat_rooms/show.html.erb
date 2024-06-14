@@ -5,7 +5,10 @@
   chatbox
     <% @chat_room.messages.each do |message| %>
       <% if message.chat_room_id ==  @chat_room.id %>
-       <p> <%= message.content %></p>
+        <div>
+          <p><%= message.user.name %></p>
+          <p> => <%= message.content %></p>
+        </div>
       <% end %>
     <% end %>
   </div>
@@ -15,7 +18,7 @@
   </div>
   </div>
 
-  <div class="userlist">users
+  <div class="userlist">users connected
   </div>
 
 </div>
